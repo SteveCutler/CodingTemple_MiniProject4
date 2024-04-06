@@ -50,7 +50,7 @@ class Genre:
                 info = f"Title: {response[1]}, Author: {rd("authorsbyid", response[2]) [0]}, Genre: {rd("genresbyid", response[3]) [0]}, ISBN: {response[4]}, Availability: {response[5]}, Quantity: {response[6]}"
                 return info
         else:
-            print(f"Sorry! I couldn't find any books by the author '{name}'...")
+            print(f"Sorry! I couldn't find any books under the genre '{genre}'...")
             return None
 
     
